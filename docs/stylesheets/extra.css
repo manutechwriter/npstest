@@ -1,0 +1,27 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.md-typeset h1 {
+    font-weight: 700;
+    color: #000;
+}
+
+h1,
+.md-typeset__scrollwrap,
+.mermaid,
+div.nps-video {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    .md-typeset img {
+        margin: 0 auto;
+        max-width: 75%;
+    }
+}
+
+#footnotes-list {
+    font-size: .65rem;
+    color: #666
+}
