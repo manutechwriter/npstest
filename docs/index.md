@@ -480,7 +480,7 @@ More specifically, this code will return a table with three columns: one with th
 
 1. To begin this query, this code retrieves the data from the `comment` column that belongs to the `nps_survey_data` table, which contains the texts of every respondent. But it uses a regular expression (i.e. `regexp_replace`) to make the text lowercase and remove unnecessary characters.
 
-2. After that, it uses `regexp_split_to_table` on the cleaned text so that every row in the `word` column contains only one word. This code also prevents unnecessary [English stop words that Elasticsearch uses](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-stop-tokenfilter.html) from being included.
+2. After that, it uses `regexp_split_to_table` on the cleaned text so that every row in the `word` column contains only one word. This code also prevents unnecessary English stop words that Elasticsearch uses<sup id="fnref-7"><a href="#footnote-7">7</a></sup> from being included.
 
 3. Finally, the outer `SELECT` statement uses the information obtained from the previous steps to build the resulting table that shows the three columns that we want.
 
@@ -788,6 +788,7 @@ Please, [follow this link to Google Forms](https://docs.google.com/forms/d/e/1FA
   <li id="footnote-4">Davies, J. (2023, July 7). What is employee net promoter score (eNPS) and how can it be used to improve employee engagement? Qualtrics. https://www.qualtrics.com/blog/employee-net-promoter-score-enps-good-measure-engagement/ <a href="#fnref-4">↩</a></li>
   <li id="footnote-5">Qualtrics XM - Experience Management Software. (2023, July 21). Qualtrics. https://www.qualtrics.com/ <a href="#fnref-5">↩</a></li>
   <li id="footnote-6">Google Forms: sign-in. (n.d.). https://docs.google.com/forms/ <a href="#fnref-6">↩</a></li>
+  <li id="footnote-7">Stop token filter | Elasticsearch Guide [8.9] | Elastic. (n.d.). Elastic. https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-stop-tokenfilter.html <a href="#fnref-7">↩</a></li>
 </ol>
 
 
