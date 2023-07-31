@@ -23,5 +23,6 @@ div.nps-video {
 
 #footnotes-list {
     font-size: .65rem;
-    color: #666
+    color: #666;
+    overflow-wrap: break-word;
 }
