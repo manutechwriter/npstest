@@ -332,13 +332,16 @@ Once I run this query, this is the resulting table that is displayed:
 | nps_category | count |
 | ----------- | ----- |
 | Promoter    | 15    |
-| Passive     | 7     |
-| Detractor   | 15    |
+| Detractor     | 7     |
+| Passive   | 15    |
 
-<figure class="pie-chart" markdown>
-  ![Example of an NPS categories count](./img/nps-categories-pie-chart-example.png)
-  <figcaption>Example of an NPS categories count chart</figcaption>
-</figure>
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': { 'pie1': '#2bc275', 'pie2': '#5f60ff', 'pie3': '#d74e26', 'pieStrokeWidth': '0px', 'textPosition': '0.5', 'pieOpacity': '1'}}}%%
+pie 
+  "Promoter" : 15
+  "Passive" : 15
+  "Detractor" : 7
+```
 
 #### Calculate the NPS value 
 
