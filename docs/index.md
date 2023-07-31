@@ -761,12 +761,16 @@ them, some of these CSN's have either have multiple `ACCOUNT_NAME`, `INDUSTRY` &
 
 ## :writing_hand: Contribution
 
-Follow these steps if you would like to contribuite to this repository on GitHub:
+This project is built using Markdown. If you have suggestions, corrections or new content to add, you can follow these steps using GitHub and your command line interface to contribute:
 
-1. Fork this repository. 
-2. Create a branch with your contribution: `git checkout -b my-feature`.
-3. Commit your changes: `git commit -m "write a message about the change that you made here"`.
-4. Push to your branch: `git push origin my-feature`.
+1. Fork [this repository](https://github.com/manutechwriter/npstest).
+2. Create a branch: `git checkout -b my-feature`.
+3. Make your changes: Edit the existing files or add a new one if needed.
+4. Stage your changes: `git add <file>` (or just `git add .` to include all changes).
+5. Commit your changes: `git commit -m "text about the change"`.
+6. Push to your branch: `git push origin my-feature`.
+
+After that, we can review the changes and keep on making this documentation better.
 
 
 ## :mailbox_with_mail: Feedback
