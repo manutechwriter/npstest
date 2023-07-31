@@ -417,7 +417,7 @@ However, given my simple fictional database, I can only obtain feedback from 3 d
 
 <figure class="line-chart" markdown>
   ![Example of NPS measured over time](./img/nps-line-chart-example.png)
-  <figcaption>Example of an NPS categories count chart</figcaption>
+  <figcaption>Example of NPS calculated over time</figcaption>
 </figure>
 
 
