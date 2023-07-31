@@ -761,7 +761,7 @@ them, some of these CSN's have either have multiple `ACCOUNT_NAME`, `INDUSTRY` &
 
 ## :writing_hand: Contribution
 
-This project is built using Markdown. If you have suggestions, corrections or new content to add, you can follow these steps using GitHub and your command line interface to contribute:
+This project is built using Markdown. If you have suggestions, corrections or new content to add, you can follow these steps using GitHub and your command-line interface to contribute:
 
 1. Fork [this repository](https://github.com/manutechwriter/npstest).
 2. Create a branch: `git checkout -b my-feature`.
