@@ -42,7 +42,7 @@ Nowadays it is a widely used customer experience metric that helps organizations
 Many NPS surveys often complement this quantitative measure with an additional question that allows respondents to justify their rating by writing a short text. This is another relevant source of information that companies can use to understand their performance in a more detailed way.
 
 
-### How to measure NPS
+<h3>How to measure NPS</h3>
 
 Once the results from the survey question are ready, calculating the Net Promoter Score is rather straightforward—you just need to subtract the percentage of Detractors from the percentage of Promoters:
 
@@ -106,7 +106,7 @@ There are different ways to implement Net Promoter Score. These are some of them
 3. Build a questionnaire with a survey app or a form builder (e.g. Google Forms<sup id="fnref-6"><a href="#footnote-6">6</a></sup>).
 
 
-### Data Sources required to implement NPS
+## Data Sources required to implement NPS
 
 There are different ways set up a Net Promoter Score implementation. Depending on your needs, you might just need to send a simple survey. However, you will probably use a more advanced configuration with different NPS surveys that are delivered periodically.
 
@@ -134,7 +134,7 @@ You may also want to obtain **additional optional information** to complement yo
 Every business has its own needs, but many may share similar NPS data sources. For example, there could also be a table in the database that stores the information of each survey to keep track of different dates, software version, purposes and strategies.
 
 
-### Example of an NPS Data Source configuration
+<h3>Example of an NPS Data Source configuration</h3>
 
 !!! example 
 
@@ -183,7 +183,7 @@ The `nps_surveys_list` table would be the source where you would get **the detai
 Last but not least, **there could be additional data sources depending on the characteristics of each business**. This would help categorize respondents in a way that allowed the company to use more detailed reportings and reinforce its offerings more precisely.
 
 
-#### Explanation of the data relationships
+ Explanation of the data relationships
 
 Now let's have a look at the SQL data relationships given the previous example using the three tables: `nps_respondent`, `nps_survey_responses`, and `nps_surveys_list`.
 
@@ -269,7 +269,7 @@ The `nps_survey_data` table that will be used as an example for the following SQ
 | ...            | ...    | ...                                              | ...          |
 
 
-#### See the count of each rating separately
+<h4>See the count of each rating separately</h4>
 
 ```sql
 SELECT rating, COUNT(*)
@@ -303,7 +303,7 @@ I can see that there are 7 respondents who gave a rating of 10, and 8 respondent
     **You can visualize the resulting table in a graphic** by exporting the query result data as a CSV or Excel file and uploading it to a software that can create graphics (e.g. [Google Sheets](https://docs.google.com/spreadsheets/u/0/), [Canva](https://www.canva.com/)).
 
 
-#### Count Promoters, Passives and Detractors
+<h4>Count Promoters, Passives and Detractors</h4>
 
 ```sql
 SELECT
@@ -338,12 +338,12 @@ Once I run this query, this is the resulting table that is displayed:
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'pie1': '#2bc275', 'pie2': '#5f60ff', 'pie3': '#d74e26', 'pieStrokeWidth': '0px', 'textPosition': '0.5', 'pieOpacity': '1'}}}%%
 pie 
-  "Promoter" : 15
+  "Promoter" : 30
   "Passive" : 15
   "Detractor" : 7
 ```
 
-#### Calculate the NPS value 
+<h4>Calculate the NPS value</h4>
 
 ```sql
 SELECT SUM(nps_category * c)  * 100.0 / SUM(c) FROM (
@@ -375,7 +375,7 @@ This is how it works:
 When this operation is executed, I can see that **the Net Promoter Score of our fictional writing app is 21** (more accurately, 21.62162).
 
 
-#### Calculate the NPS value over time
+<h4>Calculate the NPS value over time</h4>
 
 ```sql
 WITH nps_date_operation AS (
@@ -424,7 +424,7 @@ However, given my simple fictional database, I can only obtain feedback from 3 d
 </figure>
 
 
-#### Analyze textual feedback
+<h4>Analyze textual feedback</h4>
 
 ```sql
 SELECT rating, word, COUNT(word) AS word_count FROM
@@ -505,12 +505,12 @@ The data that I obtained from my writing app NPS survey feedback is displayed as
 
 ## Internal use of the metric
 
-**Metric Granularity**
+<h3>Metric Granularity</h3>
 
 `Qualtrics_ID`
 
 
-**Segments (Dimensions / Filters / Slicers):**
+<h3>Segments (Dimensions / Filters / Slicers):</h3>
 
 The following segments can be used to filter the data and categorize NPS respondents in an accurate way.
 
@@ -540,7 +540,7 @@ them, some of these CSN's have either have multiple `ACCOUNT_NAME`, `INDUSTRY` &
 `GEO` set to `'UNKNOWN'`.
 
 
-### Status
+<h3>Status</h3>
 
 IN PROGRESS
 
@@ -565,11 +565,11 @@ Confirm the role change
 
 
 
-### Internal queries
+## Internal queries
 
 Below are sample SQL queries that are ready to use internally in order to obtain valuable data in different scenarios:
 
-#### Use Case 1 - To fetch non-EBA Qualtrics IDs per fiscal year
+<h3>Use Case 1 - To fetch non-EBA Qualtrics IDs per fiscal year</h3>
 
 ```sql
 select FISCAL_YEAR,
@@ -579,7 +579,7 @@ where EBA_FLAG = 'FALSE'
 group by 1
 ```
 
-#### Use Case 2 - To fetch Qualtrics IDs (EBA and non-EBA) per industry
+<h3>Use Case 2 - To fetch Qualtrics IDs (EBA and non-EBA) per industry</h3>
 
 ```sql
 SELECT INDUSTRY,
@@ -589,7 +589,7 @@ from "EIO_PUBLISH"."ENGAGEMENT_SHARED"."NPS_EBA_NON_EBA_SURVEY"
 GROUP BY INDUSTRY;
 ```
 
-#### Use Case 3 - To fetch EBA Qualtrics IDs per GEO
+<h3>Use Case 3 - To fetch EBA Qualtrics IDs per GEO</h3>
 
 ```sql
 with count_rows as
@@ -614,7 +614,7 @@ detractors_count/qualtrics_count as detractors_perc
 )
 ```
 
-#### Use Case 4 - To calculate overall NPS score (EBA and non-EBA)
+<h3>Use Case 4 - To calculate overall NPS score (EBA and non-EBA)</h3>
 
 ```sql
 with count_rows as
@@ -638,7 +638,7 @@ detractors_count/qualtrics_count as detractors_perc
 )
 ```
 
-#### Use Case 5 - To calculate EBA NPS score
+<h3>Use Case 5 - To calculate EBA NPS score</h3>
 
 ```sql
 with count_rows as
@@ -663,7 +663,7 @@ detractors_count/qualtrics_count as detractors_perc
 )
 ```
 
-#### Use Case 6 - To connect NPS score table with applicable dimensions
+<h3>Use Case 6 - To connect NPS score table with applicable dimensions</h3>
 
 ```sql
 WITH ACCOUNT_CED AS (
@@ -691,11 +691,11 @@ LEFT JOIN ACCOUNT_CED ON
 SURVEY.ACCOUNT_CSN = ACCOUNT_CED.ACCOUNT_CSN 
 ```
 
-## Report / Data for Reconciliation
+<h3>Report / Data for Reconciliation</h3>
 
 Non
 
-**Check list for Metric Owner**
+## Check list for Metric Owner
 
 | ID  | Item | Comments |
 | --- | ---- | -------- |
@@ -708,7 +708,7 @@ Non
 | 7   | Do you have a process for proactively communicating changes and known issues? | | |
 | 8   | Have you considered impacts to external parties such as partners/customers? | | |
 
-### Governance
+<h3>Governance</h3>
 
 This is for any version updates to how the metric is defined.
 
@@ -717,9 +717,9 @@ This is for any version updates to how the metric is defined.
 | 1.0     | 06 Feb 2023 |          | Metric documentation available through KPI Simplification Initiative. | This metric was available prior to this start date, but the date reflects when this logic documentation was created for KPI Simplification. |
 
 
-### Data Quality & Monitoring
+## Data Quality & Monitoring
 
-**Known Data Quality Issues**
+<h3>Known Data Quality Issues</h3>
 
 1. Not all `Qualtrics_id` have an `account_csn`, hence not all `qualtrics_id` will have an `account_name`.
 2. For `ADSK_BUSINESS_SCORE` the NPS threshold is unusual, it's `FY21_ADSK_BUSINESS_SCORE >= 6 THEN 'PROMOTER' WHEN FY21_ADSK_BUSINESS_SCORE <= 3 THEN 'DETRACTOR'` for all others `when SCORE <= 3 then Detractor` and `SCORE >= 9 then Promoter`.
@@ -731,7 +731,7 @@ them, some of these CSN's have either have multiple `ACCOUNT_NAME`, `INDUSTRY` &
 `qualtrics_id` with multiple `ACCOUNT_CSN` will have `ACCOUNT_NAME`, `INDUSTRY` and
 `GEO` set to `'UNKNOWN'`.
 
-**Data Quality Checks**
+<h3>Data Quality Checks</h3>
 
 * Unique fields
     - `QUALTRICS_ID`
@@ -755,7 +755,7 @@ them, some of these CSN's have either have multiple `ACCOUNT_NAME`, `INDUSTRY` &
 | SCORE                       | 11        | 0         |
 
 
-**Inventory of Downstream Users**
+<h3>Inventory of Downstream Users</h3>
 
 | Report / Process Title | Report / Process Description | Link to More Details | Consumers |
 | ---------------------- | ---------------------------- | -------------------- | --------- |
