@@ -70,14 +70,12 @@ Below are **some important use cases of NPS for companies**:
 
 ```mermaid
 graph TD
-    style A fill:#000,stroke:black,stroke-width:1px,color:#fff;
-    classDef use_case fill:#fff,stroke:black,stroke-width:1px,color:#000;
 
-    A[Use cases of Net Promoter Score] --> B(Assessing the impact):::use_case
-    A[Use cases of Net Promoter Score] --> C(Boosting sales):::use_case
-    A[Use cases of Net Promoter Score] --> D(Preventing churn):::use_case
-    A[Use cases of Net Promoter Score] --> E(Branding enhancement):::use_case
-    A[Use cases of Net Promoter Score] --> F(Workplace welfare):::use_case
+    A[Use cases of Net Promoter Score] --> B(Assessing the impact)
+    A[Use cases of Net Promoter Score] --> C(Boosting sales)
+    A[Use cases of Net Promoter Score] --> D(Preventing churn)
+    A[Use cases of Net Promoter Score] --> E(Branding enhancement)
+    A[Use cases of Net Promoter Score] --> F(Workplace welfare)
 ```
 
 - **Assessing the impact:** Identifying the NPS value can help organizations **learn about the utility and perceived value of their offerings**, and use this feedback to improve their products and services.

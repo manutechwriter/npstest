@@ -7,12 +7,18 @@ nav:
 theme:
     name: material
     palette:
+      - scheme: default
         primary: black
+        toggle:
+          icon: material/toggle-switch
+          name: Switch to dark mode
+      - scheme: slate
+        primary: white
+        toggle:
+          icon: material/toggle-switch-off-outline
+          name: Switch to light mode
     features:
         - content.code.copy
-
-
-
 
 markdown_extensions:
 - attr_list
@@ -31,5 +37,3 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-
-

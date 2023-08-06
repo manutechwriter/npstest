@@ -2,9 +2,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.md-typeset h1 {
+[data-md-color-primary="black"] .md-typeset h1 {
     font-weight: 700;
     color: #000;
+}
+
+[data-md-color-primary="white"] .md-typeset h1 {
+    font-weight: 700;
+    color: #fff;
 }
 
 h1,
@@ -23,6 +28,5 @@ div.nps-video {
 
 #footnotes-list {
     font-size: .65rem;
-    color: #666;
     overflow-wrap: break-word;
 }
