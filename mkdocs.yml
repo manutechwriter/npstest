@@ -4,7 +4,6 @@ extra_css:
   - stylesheets/extra.css
 nav:
     - Home: index.md
-    - What's new?: updates.md
 theme:
     name: material
     palette:
