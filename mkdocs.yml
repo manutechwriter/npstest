@@ -4,6 +4,7 @@ extra_css:
   - stylesheets/extra.css
 nav:
     - Home: index.md
+    - What's new?: updates.md
 theme:
     name: material
     palette:
@@ -19,6 +20,12 @@ theme:
           name: Switch to light mode
     features:
         - content.code.copy
+        - content.action.edit
+        - search.suggest
+
+repo_url: https://github.com/manutechwriter/npstest
+edit_uri: edit/main/docs/
+
 
 markdown_extensions:
 - attr_list

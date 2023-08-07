@@ -12,6 +12,10 @@
     color: #fff;
 }
 
+.md-header__source {
+    display: none;
+}
+
 h1,
 .md-typeset__scrollwrap,
 .mermaid,
