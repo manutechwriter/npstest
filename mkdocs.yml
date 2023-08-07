@@ -1,5 +1,5 @@
 site_name: Net Promoter Score
-site_url: https://example.com/
+site_url: https://manutechwriter.github.io/npstest/
 extra_css:
   - stylesheets/extra.css
 nav:
@@ -25,6 +25,7 @@ theme:
         - navigation.tabs
         - navigation.tracking
         - navigation.instant
+        - navigation.top
 
 repo_url: https://github.com/manutechwriter/npstest
 edit_uri: edit/main/docs/
