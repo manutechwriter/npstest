@@ -1,6 +1,6 @@
 # Updates (NEW)
 
-Hear are the latest improvements to the website:
+These are the features that I added since the last meeting:
 
 1. **Simplified Navigation**: Subheadings have been removed from the Table of Contents.
 2. **Enhanced Search Functionality**: Now it suggests word completion while typing, with real-time previews. Accept suggestions using the right arrow key.
