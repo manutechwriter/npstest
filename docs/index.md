@@ -1,4 +1,4 @@
-# METRIC: Net Promoter Score (NPS) 
+# METRIC: Net Promoter Score (NPS)
 
 | Details                  | Information              |
 | ------------------------ | ------------------------ |
@@ -181,7 +181,7 @@ The `nps_surveys_list` table would be the source where you would get **the detai
 Last but not least, **there could be additional data sources depending on the characteristics of each business**. This would help categorize respondents in a way that allowed the company to use more detailed reportings and reinforce its offerings more precisely.
 
 
- Explanation of the data relationships
+## Explanation of the data relationships
 
 Now let's have a look at the SQL data relationships given the previous example using the three tables: `nps_respondent`, `nps_survey_responses`, and `nps_surveys_list`.
 
