@@ -4,7 +4,7 @@ extra_css:
   - stylesheets/extra.css
 nav:
     - Home: index.md
-    - What's new?: updates.md
+    - Updates (NEW): updates.md
 theme:
     name: material
     palette:
@@ -22,6 +22,9 @@ theme:
         - content.code.copy
         - content.action.edit
         - search.suggest
+        - navigation.tabs
+        - navigation.tracking
+        - navigation.instant
 
 repo_url: https://github.com/manutechwriter/npstest
 edit_uri: edit/main/docs/
