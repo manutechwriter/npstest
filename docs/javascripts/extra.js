@@ -107,7 +107,7 @@ document$.subscribe(() => {
     }
 
 
-    const liveChartUrl = 'manutechwriter.github.io/npstest/live-chart/';
+    const liveChartUrl = 'https://manutechwriter.github.io/npstest/live-chart/';
 
     if (liveChartUrl && window.location.href === liveChartUrl) {
         if (document.referrer === "") {
