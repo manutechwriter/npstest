@@ -101,9 +101,9 @@ div.nps-video {
     color: #fff;
     padding: 10px;
     border-radius: 5px;
-    position: absolute; /* Change to 'absolute' positioning */
-    top: 50%; /* Position at the vertical center */
+    position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    transform: translate(-50%, -50%);
     z-index: 1000;
 }
