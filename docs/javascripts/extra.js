@@ -1,13 +1,5 @@
 document$.subscribe(() => {
 
-    // Function to inject Mermaid script
-    function injectMermaidScript() {
-        const mermaidScript = document.createElement('script');
-        mermaidScript.src = 'https://cdn.jsdelivr.net/npm/mermaid@10.3.0/dist/mermaid.min.js';
-        mermaidScript.onload = initializeMermaid; // Call initialization after script is loaded
-        document.head.appendChild(mermaidScript);
-    }
-
     // Function to initialize Mermaid
     function initializeMermaid() {
         mermaid.initialize({
@@ -26,6 +18,7 @@ document$.subscribe(() => {
 
     // Function to update the Mermaid graph
     function updateMermaidGraph() {
+
         // Fetch ratings data and generate Mermaid syntax
         const apiUrl = "https://dark-pink-prawn-wear.cyclic.app/getRatings";
 
@@ -71,10 +64,17 @@ document$.subscribe(() => {
 
     if (liveChartUrl && window.location.href === liveChartUrl) {
         if (document.referrer === "") {
+
             // Inject the Mermaid script when accessed through deep linking
-            injectMermaidScript();
-            updateMermaidGraph();
+            const mermaidScript = document.createElement('script');
+            mermaidScript.src = 'https://cdn.jsdelivr.net/npm/mermaid@10.3.0/dist/mermaid.min.js';
+            mermaidScript.onload = () => {
+                initializeMermaid();
+                updateMermaidGraph();
+            };
+            document.head.appendChild(mermaidScript);
         } else {
+
             // Initialize Mermaid without injecting script
             initializeMermaid();
             updateMermaidGraph();
@@ -92,8 +92,7 @@ document$.subscribe(() => {
             }
         })
 
-        // Fetch and update Mermaid graph on initial load
-        updateMermaidGraph();
+        window.onload = updateMermaidGraph;
     }
 
 });
