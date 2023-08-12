@@ -27,7 +27,6 @@ theme:
         - search.suggest
         - navigation.tabs
         - navigation.tracking
-        - navigation.instant
         - navigation.top
 
 repo_url: https://github.com/manutechwriter/npstest
