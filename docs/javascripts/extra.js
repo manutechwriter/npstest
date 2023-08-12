@@ -1,4 +1,4 @@
-document$.subscribe(() => {
+// document$.subscribe(() => {
     // Function to initialize Mermaid
     function initializeMermaid() {
         mermaid.initialize({
@@ -124,4 +124,4 @@ document$.subscribe(() => {
             updateMermaidGraph();
         }
     }
-});
+// });
