@@ -1,5 +1,4 @@
 document$.subscribe(() => {
-
     // Function to initialize Mermaid
     function initializeMermaid() {
         mermaid.initialize({
@@ -13,12 +12,10 @@ document$.subscribe(() => {
                 pieOpacity: '1'
             }
         });
-
     }
 
     // Function to update the Mermaid graph
     function updateMermaidGraph() {
-
         // Fetch ratings data and generate Mermaid syntax
         const apiUrl = "https://dark-pink-prawn-wear.cyclic.app/getRatings";
 
@@ -60,11 +57,60 @@ document$.subscribe(() => {
             });
     }
 
-    const liveChartUrl = 'https://manutechwriter.github.io/npstest/live-chart/';
+    const circles = document.querySelectorAll('.circle');
+
+    circles.forEach((circle, index) => {
+        circle.addEventListener("click", function() {
+            showMessage(index + 1);
+            updateMermaidGraph();
+            // Update the Mermaid graph after storing the rating
+            storeRating(index + 1).then(() => {
+                updateMermaidGraph();
+            });
+        });
+    });
+
+ // Function to store rating
+    function storeRating(rating) {
+        const apiUrl = "https://dark-pink-prawn-wear.cyclic.app/storeRating";
+        const data = {
+            rating: rating,
+        };
+
+        return fetch(apiUrl, {
+            method: "POST",
+            body: JSON.stringify(data),
+            headers: {
+                "Content-Type": "application/json",
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Rating stored:', rating);
+            console.log("Rating stored data.message:", data.message);
+        })
+        .catch(error => {
+            console.error("Error storing rating:", error);
+        });
+    }
+
+    // Function to show message
+    function showMessage(rating) {
+        const messageContainer = document.createElement("div");
+        messageContainer.classList.add("rating-message-container");
+        messageContainer.textContent = `You selected: ${rating}`;
+        document.body.appendChild(messageContainer);
+
+        setTimeout(function() {
+            document.body.removeChild(messageContainer);
+        }, 2000);
+    }
+
+
+    const liveChartUrl = 'manutechwriter.github.io/npstest/live-chart/';
 
     if (liveChartUrl && window.location.href === liveChartUrl) {
         if (document.referrer === "") {
-
             // Inject the Mermaid script when accessed through deep linking
             const mermaidScript = document.createElement('script');
             mermaidScript.src = 'https://cdn.jsdelivr.net/npm/mermaid@10.3.0/dist/mermaid.min.js';
@@ -74,25 +120,8 @@ document$.subscribe(() => {
             };
             document.head.appendChild(mermaidScript);
         } else {
-
-            // Initialize Mermaid without injecting script
-            initializeMermaid();
+            // Update the Mermaid graph without injecting script
             updateMermaidGraph();
         }
-
-        // Attach event listener for receiving messages
-        window.addEventListener('message', event => {
-            if (event.origin !== 'https://manutechwriter.github.io') {
-                return; // Check the origin to ensure security
-            }
-
-            if (event.data.type === 'newRating') {
-                updateMermaidGraph();
-
-            }
-        })
-
-        window.onload = updateMermaidGraph;
     }
-
 });
