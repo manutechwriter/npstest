@@ -77,6 +77,10 @@ div.nps-video {
     font-size: 1em;
 }
 
+[data-md-color-primary="white"] .circle {
+    color: #fff;
+}
+
 .circle-1 {
     border-color: #d74e26;
 }
