@@ -1,0 +1,1400 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://manutechwriter.github.io/npstest/">
+      
+      
+      
+        <link rel="next" href="updates/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.9">
+    
+    
+      
+        <title>Net Promoter Score</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.f2e4d321.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#metric-net-promoter-score-nps" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Net Promoter Score" class="md-header__button md-logo" aria-label="Net Promoter Score" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Net Promoter Score
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/manutechwriter/npstest" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="updates/" class="md-tabs__link">
+        
+  
+    
+  
+  Updates (NEW)
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="live-chart/" class="md-tabs__link">
+        
+  
+    
+  
+  Live Chart (NEW)
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Net Promoter Score" class="md-nav__button md-logo" aria-label="Net Promoter Score" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Net Promoter Score
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/manutechwriter/npstest" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-net-promoter-score-nps" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Net Promoter Score (NPS)?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#business-use-cases-of-nps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business use cases of NPS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nps-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      NPS Implementation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-sources-required-to-implement-nps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Sources required to implement NPS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explanation-of-the-data-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explanation of the data relationships
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calculate-net-promoter-score-using-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calculate Net Promoter Score using SQL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contribution
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feedback
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#footnotes-and-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      Footnotes and references
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="updates/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Updates (NEW)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="live-chart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Live Chart (NEW)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-net-promoter-score-nps" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Net Promoter Score (NPS)?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#business-use-cases-of-nps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business use cases of NPS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nps-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      NPS Implementation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-sources-required-to-implement-nps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Sources required to implement NPS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explanation-of-the-data-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explanation of the data relationships
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calculate-net-promoter-score-using-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calculate Net Promoter Score using SQL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contribution
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feedback
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#footnotes-and-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      Footnotes and references
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/manutechwriter/npstest/edit/main/docs/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="metric-net-promoter-score-nps">METRIC: Net Promoter Score (NPS)</h1>
+<table>
+<thead>
+<tr>
+<th>Details</th>
+<th>Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Metric Title</td>
+<td>Net Promoter Score (NPS)</td>
+</tr>
+<tr>
+<td>Metric Short Description</td>
+<td>KPI to measure customer advocacy and loyalty.</td>
+</tr>
+<tr>
+<td>Metric Long Description</td>
+<td>NPS is a metric based on a survey question that enables companies analyze the perceived value of a brand, product or service and assess the impact of their offerings.</td>
+</tr>
+</tbody>
+</table>
+<p>Discover how customers feel about a brand, product or service with this metric.</p>
+<p>This document explains the <strong>definition of Net Promoter Score and its relevance</strong> for businesses. It also covers the basics of its implementation and provides instructions with sample codes to <strong>calculate NPS using SQL</strong>.</p>
+<h2 id="what-is-net-promoter-score-nps">What is Net Promoter Score (NPS)?</h2>
+<p>Net Promoter Score<sup>®</sup>, also known as NPS<sup>®</sup><sup id="fnref-1"><a href="#footnote-1">1</a></sup>, is a key performance indicator that enables businesses to <strong>measure customer loyalty</strong>. It was introduced by Fred Reichheld in his 2003 Harvard Business Review article, <em>The One Number You Need to Grow</em><sup id="fnref-2"><a href="#footnote-2">2</a></sup>.</p>
+<p>Nowadays it is a widely used customer experience metric that helps organizations understand if their products and services are meeting the users' expectations by asking <strong>one survey question</strong>:</p>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>On a scale of 0 to 10, how likely is it that you would recommend Company/Product/Service to a friend or colleague?</p>
+</div>
+<figure>
+<p><img alt="Example of an NPS Survey" src="img/nps-survey-example.png" />
+  </p>
+<figcaption>Example of an NPS survey</figcaption>
+</figure>
+<p><strong>Respondents are divided into 3 categories</strong> based on their rating:</p>
+<table>
+<thead>
+<tr>
+<th>Rating</th>
+<th>Category</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0-6</td>
+<td>Detractors</td>
+<td>Respondents who are unsatisfied and may express negative opinions.</td>
+</tr>
+<tr>
+<td>7-8</td>
+<td>Passives</td>
+<td>Respondents who are satisfied, but not enthusiastic.</td>
+</tr>
+<tr>
+<td>9-10</td>
+<td>Promoters</td>
+<td>Respondents who are passionate and inclined to bring in new customers.</td>
+</tr>
+</tbody>
+</table>
+<p>Many NPS surveys often complement this quantitative measure with an additional question that allows respondents to justify their rating by writing a short text. This is another relevant source of information that companies can use to understand their performance in a more detailed way.</p>
+<h3>How to measure NPS</h3>
+
+<p>Once the results from the survey question are ready, calculating the Net Promoter Score is rather straightforward—you just need to subtract the percentage of Detractors from the percentage of Promoters:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>NPS = % Promoters - % Detractors</p>
+</div>
+<p><strong>The resulting NPS value ranges from -100 to +100</strong>. The higher the score, the stronger the level of customer advocacy.</p>
+<p>However, if the NPS value falls into negative territory, which means that Detractors outnumber Promoters, that clearly indicates that there are opportunities for improvement.</p>
+<p>There are online tools that can help you with this process. For example, Qualtrics has an NPS Calculator on their website<sup id="fnref-3"><a href="#footnote-3">3</a></sup>.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>If the survey feedback is stored in a database, <strong>NPS can also be calculated using SQL (Structured Query Language)</strong>. Keep reading to learn more about this later or <a href="#calculate-net-promoter-score-using-sql">jump to that section</a>.</p>
+</div>
+<h2 id="business-use-cases-of-nps">Business use cases of NPS</h2>
+<p>The widespread fame of Net Promoter Score across businesses can be attributed to its remarkable relevance and practical utility in various scenarios.</p>
+<p>Below are <strong>some important use cases of NPS for companies</strong>:</p>
+<pre class="mermaid"><code>graph TD
+
+    A[Use cases of Net Promoter Score] --&gt; B(Assessing the impact)
+    A[Use cases of Net Promoter Score] --&gt; C(Boosting sales)
+    A[Use cases of Net Promoter Score] --&gt; D(Preventing churn)
+    A[Use cases of Net Promoter Score] --&gt; E(Branding enhancement)
+    A[Use cases of Net Promoter Score] --&gt; F(Workplace welfare)</code></pre>
+<ul>
+<li>
+<p><strong>Assessing the impact:</strong> Identifying the NPS value can help organizations <strong>learn about the utility and perceived value of their offerings</strong>, and use this feedback to improve their products and services.</p>
+</li>
+<li>
+<p><strong>Boosting sales:</strong> By having specific data about the percentage of respondents, companies can focus on <strong>addressing the specific concerns of Detractors and Passives to turn them into Promoters</strong> and increase positive word-of-mouth.</p>
+</li>
+<li>
+<p><strong>Preventing churn:</strong> It prevents customer loss because having a high number of Detractors could lead to a decrease in revenue. This way, NPS <strong>contributes to the long-term survival of a business</strong>.</p>
+</li>
+<li>
+<p><strong>Branding enhancement:</strong> Since Net Promoter Score is widely adopted by many companies, achieving a high score increases recognition and reinforces the brand. It can also be <strong>used to obtain a greater promotional performance</strong> and stand out from the competition.</p>
+</li>
+<li>
+<p><strong>Workplace wellfare:</strong> Companies can also use NPS to <strong>increase the satisfaction and advocacy of employees</strong>. This is known as eNPS (employee Net Promoter Score)<sup id="fnref-4"><a href="#footnote-4">4</a></sup>. It can become an essential metric to evaluate the overall level of internal engagement and increase talent retention and efficiency.</p>
+</li>
+</ul>
+<p>It is important to keep in in mind that, while NPS holds a significant value as a resource for businesses, <strong>its full potential is reached when combined with other customer feedback metrics</strong>.</p>
+<p>Besides, <strong>NPS should be used periodically in order to gather accurate data over time</strong>. You could also include it as a part of a transactional process by sending a survey every time a specific product is sold.</p>
+<h2 id="nps-implementation">NPS Implementation</h2>
+<p>There are different ways to implement Net Promoter Score. These are some of them:</p>
+<ol>
+<li>
+<p>Use specialized software or an advanced development that is designed specifically for NPS configuration (e.g. Qualtrics<sup id="fnref-5"><a href="#footnote-5">5</a></sup>). <strong>This option can help automate procedures and collect more accurate, reliable and actionable information</strong>.</p>
+</li>
+<li>
+<p>Send an email with an NPS survey question to potential respondents and ask them to reply directly to that email with their rating.</p>
+</li>
+<li>
+<p>Build a questionnaire with a survey app or a form builder (e.g. Google Forms<sup id="fnref-6"><a href="#footnote-6">6</a></sup>).</p>
+</li>
+</ol>
+<h2 id="data-sources-required-to-implement-nps">Data Sources required to implement NPS</h2>
+<p>There are different ways set up a Net Promoter Score implementation. Depending on your needs, you might just need to send a simple survey. However, you will probably use a more advanced configuration with different NPS surveys that are delivered periodically.</p>
+<p><strong>To calculate the NPS data using SQL, you must obtain the respondents' information, such as their rating and comments, from data sources</strong>. But you can also use further details about each participant to classify their answers in a more targeted and practical way.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Data sources in SQL in this case refers to the information that is stored in a relational database, which can be retrieved by executing SQL queries.</p>
+</div>
+<p>These are the <strong>required data sources</strong> to which you must have access if you want to calculate the NPS value properly:</p>
+<ol>
+<li>
+<p><strong>Respondent identification:</strong> The ID of each person that answers the NPS survey is the primary key that is needed. This should preferrabllly be a number instead of a name, an email or any other text, because the textual identification could change over time, whereas an ID number can remain inmutable.</p>
+</li>
+<li>
+<p><strong>Respondent rating:</strong> Another source of information that is required to integrate the Net Promoter Score metric is the score provided by each respondent. This is the crucial numerical data that you need to extract the final NPS value.</p>
+</li>
+</ol>
+<p>You may also want to obtain <strong>additional optional information</strong> to complement your reporting and make the most of the NPS experience by using more accurate and practical data, such as:</p>
+<ul>
+<li>
+<p><strong>Textual feedback:</strong> Although the NPS value is a number, it is also possible to gather information from a form field where respondents can write text to justify their answer. It is also possible to extract valuable insights with SQL from this data source.</p>
+</li>
+<li>
+<p><strong>Date:</strong> The day or timestamp that the survey question was created, sent or submitted is another relevant piece of information that can give organizations a clearer idea of the evolution of the participants' feedback, especially if NPS surveys are sent periodically.</p>
+</li>
+<li>
+<p><strong>Respondent background:</strong> Other aspects you may want to consider are the country, age, name and email, or any other relevant criteria of the participants' profile, to detect trends about the company's products and services in a more segmented way. The more detailed the data, the more refined solutions you could put in place.</p>
+</li>
+</ul>
+<p>Every business has its own needs, but many may share similar NPS data sources. For example, there could also be a table in the database that stores the information of each survey to keep track of different dates, software version, purposes and strategies.</p>
+<h3>Example of an NPS Data Source configuration</h3>
+
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>This section introduces a complementary sample scenario that can serve as a reference to understand <strong>a more comprehensive Net Promoter Score implementation using three tables as SQL Data Sources</strong>.</p>
+</div>
+<p><strong>Table 1: NPS Respondent</strong></p>
+<p>This table would have all <strong>the information about every person who submits an NPS survey</strong>, such as the unique identifier, the name, the email, the country or any other related data.</p>
+<p>Thus, the name of this table could be <code>nps_respondent</code>, and it would look similar to this:</p>
+<table>
+<thead>
+<tr>
+<th>respondent_id</th>
+<th>respondent_name</th>
+<th>respondent_email</th>
+<th>respondent_country</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Michael Doe</td>
+<td>mike@example.com</td>
+<td>England</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Jonathan Pérez</td>
+<td>jona@example.com</td>
+<td>Spain</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Sophie Larsson</td>
+<td>soph@example.com</td>
+<td>Australia</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Use column names that match your data. For example, if your NPS surveys are only targeting customers, you could use <code>customer_id</code> rather than <code>respondent_id</code>, <code>customer_name</code> instead of <code>respondent_name</code>, etcetera.</p>
+</div>
+<p><strong>Table 2: NPS Survey Responses</strong></p>
+<p>This is <strong>where the feedback resides</strong>. Each answer to every field of an individual NPS questionnaire would be stored in this table. For example: the rating given by respondents, as well as the comment.</p>
+<p>This table should also include the identification number of each survey, and it would also be useful to have the date in which the responses were given.</p>
+<p>Therefore, this <code>nps_survey_responses</code> table would show like this:</p>
+<table>
+<thead>
+<tr>
+<th>response_id</th>
+<th>survey_id</th>
+<th>respondent_id</th>
+<th>rating</th>
+<th>comment</th>
+<th>response_date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>201</td>
+<td>101</td>
+<td>1</td>
+<td>9</td>
+<td>Great product!</td>
+<td>2023-06-17</td>
+</tr>
+<tr>
+<td>202</td>
+<td>101</td>
+<td>2</td>
+<td>7</td>
+<td>Good but should be better</td>
+<td>2023-06-18</td>
+</tr>
+<tr>
+<td>203</td>
+<td>102</td>
+<td>3</td>
+<td>8</td>
+<td>Satisfactory service</td>
+<td>2023-06-22</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 3: NPS Surveys List</strong></p>
+<p>The <code>nps_surveys_list</code> table would be the source where you would get <strong>the details about the surveys themselves</strong>, each of them including its own identification number. To enable a clearer monitoring of the questionnaires, this table should also have the name of every survey, the date where it was either created or sent, and it would be a great idea to add a description too:</p>
+<table>
+<thead>
+<tr>
+<th>survey_id</th>
+<th>survey_name</th>
+<th>survey_description</th>
+<th>survey_creation_date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>101</td>
+<td>Product Feedback</td>
+<td>Feedback on our new product</td>
+<td>2023-06-15</td>
+</tr>
+<tr>
+<td>102</td>
+<td>Service Quality</td>
+<td>Evaluation of our services</td>
+<td>2023-06-20</td>
+</tr>
+</tbody>
+</table>
+<p>Last but not least, <strong>there could be additional data sources depending on the characteristics of each business</strong>. This would help categorize respondents in a way that allowed the company to use more detailed reportings and reinforce its offerings more precisely.</p>
+<h2 id="explanation-of-the-data-relationships">Explanation of the data relationships</h2>
+<p>Now let's have a look at the SQL data relationships given the previous example using the three tables: <code>nps_respondent</code>, <code>nps_survey_responses</code>, and <code>nps_surveys_list</code>.</p>
+<p>This will provide a greater understanding of how the information of each table is linked to another.</p>
+<pre class="mermaid"><code>erDiagram
+  nps_respondent ||..o{ nps_survey_responses : "respondent_id"
+  nps_survey_responses }o..|| nps_surveys_list : "survey_id"
+
+  nps_respondent {
+    int respondent_id PK
+    varchar respondent_name
+    varchar respondent_email
+    varchar respondent_country
+  }
+
+  nps_survey_responses {
+    int response_id PK
+    int survey_id FK
+    int respondent_id FK
+    int rating
+    varchar comment
+    date response_date
+  }
+
+  nps_surveys_list {
+    int survey_id PK
+    varchar survey_name
+    varchar survey_description
+    date survey_creation_date
+  }</code></pre>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The <em>primary key (PK)</em> refers to the column that uniquely identifies each row and establishes relationships between different tables. It is referred to as a <em>foreign key (PK)</em> in other tables where it is linked.</p>
+</div>
+<ol>
+<li>
+<p>The <code>nps_respondent</code> table is considered to be the primary data source in this example, since it contains the central information of the business NPS respondents. The information of each individual respondent about their user profile (id, name, email, and country in this case) is stored here. The column titled <code>respondent_id</code> serves as the primary key in this table.</p>
+</li>
+<li>
+<p>The <code>nps_survey_responses</code> table stores every response that a respondent provides in an NPS survey. This means that a single respondent can provide more than one answer. Therefore, the <code>nps_respondent</code> table has a <em>one-to-many relationship</em> with the <code>nps_survey_reponses</code> table via the <code>respondent_id</code> column, which acts as a <em>foreign key</em> here. Another <em>foreign key</em> in this table is the <code>survey_id</code>, which is used to establish a <em>many-to-one relationship</em> with the <code>nps_surveys_list</code> table. Thus, many responses may be related to only one survey. The primary key in this table is <code>response_id</code>, which uniquely identifies every response. </p>
+</li>
+<li>
+<p>The <code>nps_surveys_list</code> table contains the data about each survey, such as its identification number, name, description and creation date. It has a <em>one-to-may relationship</em> with the <code>nps_survey_responses</code> table because one survey can have multiple reponses. The column <code>survey_id</code> is the primary key in this table.</p>
+</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>A <em>one-to-many</em> relationship in SQL takes place when one row of table 1 can have multiple rows in table 2. On the other hand, a <em>many-to-one</em> relationship occurs when multiple rows in table 2 can be associated with just one row in table 1.</p>
+</div>
+<h2 id="calculate-net-promoter-score-using-sql">Calculate Net Promoter Score using SQL</h2>
+<p>In this section you will find different <strong>SQL queries that you can execute on a database that contains data from a Net Promoter Score survey</strong>.</p>
+<p>The purpose is to guide you in different cases to obtain valuable information such as the NPS value and related feedback.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can copy and paste the sample code snippets from this section to retrieve data. However, remember to <strong>change the parts of the code to match the data sources that you use</strong>.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The code blocks in this specific section have been tested using <a href="https://www.postgresql.org/">PostgreSQL</a> pgAdmin 4. If you are using a different query tool, you might need to change the syntax accordingly.</p>
+</div>
+<p>You can continue reading this section or watch the video here:</p>
+<div class="nps-video">
+    <iframe src="https://player.vimeo.com/video/849909662?h=7355d7c568" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>To validate the sample codes in this section and explain them properly, I will be using <strong>a dummy relational database as a data source</strong>. It contains the responses from an NPS survey about a fictional software writing app. More specifically it is a table called <code>nps_survey_data</code> that has 4 columns: <code>respondent_id</code>, <code>rating</code>, <code>comment</code> and <code>survey_date</code>, and it is composed by 37 rows, each row representing the feedback of a respondent.</p>
+</div>
+<p>The <code>nps_survey_data</code> table that will be used as an example for the following SQL queries looks like this:</p>
+<table>
+<thead>
+<tr>
+<th>respondent_id</th>
+<th>rating</th>
+<th>comment</th>
+<th>survey _date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>9</td>
+<td>Great software, very useful for my writing needs</td>
+<td>2023-07-20</td>
+</tr>
+<tr>
+<td>2</td>
+<td>8</td>
+<td>Easy to use and intuitive interface</td>
+<td>2023-07-20</td>
+</tr>
+<tr>
+<td>3</td>
+<td>7</td>
+<td>Good features, but could use more customization</td>
+<td>2023-07-20</td>
+</tr>
+<tr>
+<td>4</td>
+<td>10</td>
+<td>Excellent product, exceeded my expectations</td>
+<td>2023-07-20</td>
+</tr>
+<tr>
+<td>5</td>
+<td>6</td>
+<td>It's okay, but there are some bugs</td>
+<td>2023-07-20</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<h4>See the count of each rating separately</h4>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">rating</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">FROM</span><span class="w"> </span><span class="n">nps_survey_data</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">1</span>
+</code></pre></div>
+<p>To begin with, you can use SQL to organize the data in a way that shows the count of each score. This way you will <strong>see how many respondents selected a specific number</strong>.</p>
+<p>To do that, we need to have two columns: one that shows each numerical rating in a different row and another that contains the count.</p>
+<ol>
+<li>
+<p>This code first retrieves the <code>rating</code> column from the <code>nps_survey_data</code> table and uses the <code>COUNT(*)</code> SQL function to add another column next to it, which contains the number of times every rating was chosen.</p>
+</li>
+<li>
+<p>Then, <code>GROUP BY 1</code> is used to aggregate the resulting table by the first column, which is <code>rating</code> in this case. The rating column will therefore be displayed on the left side, whereas <code>COUNT</code> will be placed right next to it.</p>
+</li>
+</ol>
+<p>When I run this code using my example database, this is the result:</p>
+<table>
+<thead>
+<tr>
+<th>rating</th>
+<th>count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td>3</td>
+</tr>
+<tr>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr>
+<td>6</td>
+<td>4</td>
+</tr>
+<tr>
+<td>10</td>
+<td>7</td>
+</tr>
+<tr>
+<td>7</td>
+<td>7</td>
+</tr>
+<tr>
+<td>9</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<p>I can see that there are 7 respondents who gave a rating of 10, and 8 respondents who rated the app with a 9. This means that I have 15 Promoters!</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>You can visualize the resulting table in a graphic</strong> by exporting the query result data as a CSV or Excel file and uploading it to a software that can create graphics (e.g. <a href="https://docs.google.com/spreadsheets/u/0/">Google Sheets</a>, <a href="https://www.canva.com/">Canva</a>).</p>
+</div>
+<h4>Count Promoters, Passives and Detractors</h4>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">SELECT</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="k">CASE</span><span class="w"> </span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="k">WHEN</span><span class="w"> </span><span class="n">rating</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="s1">&#39;Promoter&#39;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="k">WHEN</span><span class="w"> </span><span class="n">rating</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">)</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="s1">&#39;Passive&#39;</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="k">WHEN</span><span class="w"> </span><span class="n">rating</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">)</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="s1">&#39;Detractor&#39;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="k">ELSE</span><span class="w"> </span><span class="s1">&#39;Error&#39;</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span><span class="k">END</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">nps_category</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">  </span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="k">FROM</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">  </span><span class="n">nps_survey_data</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">1</span>
+</code></pre></div>
+<p>This SQL query provides a table that shows the number of Promoters, Passives and Detractors from our NPS survey responses.</p>
+<ol>
+<li>
+<p>First, it retrieves the data from the <code>rating</code> column in the <code>nps_survey_data</code> table, and presents the information in another table that is composed by two columns.</p>
+</li>
+<li>
+<p>The first column of the resulting table is called <code>nps_category</code>, and it is used to categorize respondents by their NPS category. Each of these categories is presented in a separate row. More specifically, this code labels each respondent as a <em>Promoter</em>, <em>Passive</em> or <em>Detractor</em> depending on their rating, which ranges from 1 to 10. These numbers come from the <code>rating</code> column of the <code>nps_survey_data</code> table.</p>
+</li>
+<li>
+<p>The second column is placed on the right side and is referred to as the <code>count</code> column, since it simply shows the count of each of the three segments (Promoters, Passives and Detractors) from the results of the NPS survey.</p>
+</li>
+</ol>
+<p>Once I run this query, this is the resulting table that is displayed:</p>
+<table>
+<thead>
+<tr>
+<th>nps_category</th>
+<th>count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Promoter</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Detractor</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Passive</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid"><code>%%{init: {'theme': 'base', 'themeVariables': { 'pie1': '#2bc275', 'pie2': '#5f60ff', 'pie3': '#d74e26', 'pieStrokeWidth': '0px', 'textPosition': '0.5', 'pieOpacity': '1'}}}%%
+pie 
+  "Promoter" : 15
+  "Passive" : 15
+  "Detractor" : 7</code></pre>
+<h4>Calculate the NPS value</h4>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="n">nps_category</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">c</span><span class="p">)</span><span class="w">  </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="p">.</span><span class="mi">0</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="k">c</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="k">SELECT</span><span class="w"> </span><span class="k">CASE</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">        </span><span class="k">WHEN</span><span class="w"> </span><span class="n">rating</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="mi">1</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">        </span><span class="k">WHEN</span><span class="w"> </span><span class="n">rating</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">)</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="mi">0</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">        </span><span class="k">ELSE</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="k">END</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">nps_category</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="k">c</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="k">FROM</span><span class="w"> </span><span class="n">nps_survey_data</span><span class="w"> </span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">nps_category</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">nps_category</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="p">)</span><span class="w"> </span><span class="n">x</span>
+</code></pre></div>
+<p><strong>This code calculates the Net Promoter Score, which is a number that ranges from -100 to 100</strong>. It is therefore one of the most important SQL queries from this list.</p>
+<p>This is how it works:</p>
+<ol>
+<li>
+<p>The purpose here is to subtract the percentage of Detractors from the percentage of Promoters to obtain the NPS value. Therefore, we must give Promoters, Detractors and Passives a numerical value. To do that, we obtain the rating given by each respondent from the <code>rating</code> column that is stored in the <code>nps_survey_data</code> table.</p>
+</li>
+<li>
+<p>Then, we divide the ratings into three segments, each of them placed in its corresponding row. However, we do not set a textual value to such categories to distinguish them as Promoters, Detractors or Passives. Instead, we set Promoters (respondents who give a rating of 9 or 10) to have the number <code>1</code> as the value.</p>
+</li>
+<li>
+<p>Likewise, we give Passives (respondents who give a rating of 7 or 8) a value of <code>0</code>, since Passives are not taken into account for this NPS operation. As for Detractors, we give a <code>-1</code> value to them. These conditions are established in the <code>SELECT</code> subquery by using the <code>CASE</code> statement, which builds a column called <code>nps_category</code> with this information.</p>
+</li>
+<li>
+<p>This subquery also uses the <code>COUNT(*)</code> SQL function, which is simply aliased as <code>c</code>, to take into account the total number of respondents in the NPS category where they belong. And it uses the <code>GROUP BY</code> and <code>ORDER BY</code> SQL clauses to configure this information properly. This way every respondent can be retrieved and added to the calculation in an organized way.</p>
+</li>
+<li>
+<p>Finally, the outer <code>SELECT</code> query calculates the NPS value by summing the counts of Promoters and Detractors with the positive and negative numerical values from the subquery using the <code>SUM</code> function. This is then multiplied by 100 to turn it into a percentage, and the result of that is divided by the total quantity of responses.</p>
+</li>
+</ol>
+<p>When this operation is executed, I can see that <strong>the Net Promoter Score of our fictional writing app is 21</strong> (more accurately, 21.62162).</p>
+<h4>Calculate the NPS value over time</h4>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">WITH</span><span class="w"> </span><span class="n">nps_date_operation</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="k">SELECT</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="n">date_trunc</span><span class="p">(</span><span class="s1">&#39;day&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">survey_date</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="k">PERIOD</span><span class="p">,</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="k">COUNT</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">FILTER</span><span class="w"> </span><span class="p">(</span><span class="k">WHERE</span><span class="w"> </span><span class="n">rating</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">9</span><span class="p">)::</span><span class="nb">FLOAT</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">promoter_count</span><span class="p">,</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="k">COUNT</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">FILTER</span><span class="w"> </span><span class="p">(</span><span class="k">WHERE</span><span class="w"> </span><span class="n">rating</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">6</span><span class="p">)::</span><span class="nb">FLOAT</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">detractor_count</span><span class="p">,</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="k">COUNT</span><span class="p">(</span><span class="mi">1</span><span class="p">)::</span><span class="nb">FLOAT</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">answers_count</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">nps_survey_data</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">  </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">1</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">  </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">1</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="p">)</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="k">SELECT</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">  </span><span class="k">PERIOD</span><span class="p">,</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">  </span><span class="p">((</span><span class="n">promoter_count</span><span class="o">/</span><span class="n">answers_count</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="p">(</span><span class="n">detractor_count</span><span class="o">/</span><span class="n">answers_count</span><span class="p">))</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="p">.</span><span class="mi">00</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">nps_value</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="k">FROM</span><span class="w"> </span><span class="n">nps_date_operation</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</code></pre></div>
+<p>Would you like to see how the NPS score evolves as time goes by? Then, you can use this query.</p>
+<p>This is a summary of what it does:</p>
+<ol>
+<li>
+<p>This code obtains the dates of the NPS questionnaires that are stored in the <code>survey_date</code> column from the <code>nps_data_table</code>. It organizes them by <code>day</code> as <code>PERIOD</code>.</p>
+</li>
+<li>
+<p>Then, it takes into account the total number of Promoters and the total number of Detractors separately, filtering and aliasing them as <code>promoter_count</code> and <code>detractor_count</code>. It also counts all the responses, that is, all the rows in the <code>nps_data_table</code> column.</p>
+</li>
+<li>
+<p>In the end, it subtracts Detractors from Promoters after dividing each of both categories by the total number of answers, and calculates the percentage from the result to obtain the NPS value organized by day as the <code>PERIOD</code>.</p>
+</li>
+</ol>
+<p>However, given my simple fictional database, I can only obtain feedback from 3 days that are very close to each other, and the NPS value doesn't change much in this case.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Although I used <code>day</code> as <code>PERIOD</code> to ellaborate this example, you can use <em>month</em>, <em>year</em> or another period that serves your needs.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>period</th>
+<th>nps_value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023-07-20</td>
+<td>20</td>
+</tr>
+<tr>
+<td>2023-07-21</td>
+<td>23.0769</td>
+</tr>
+<tr>
+<td>2023-07-24</td>
+<td>21.4285</td>
+</tr>
+</tbody>
+</table>
+<figure class="line-chart">
+<p><img alt="Example of NPS measured over time" src="img/nps-line-chart-example.png" />
+  </p>
+<figcaption>Example of NPS calculated over time</figcaption>
+</figure>
+<h4>Analyze textual feedback</h4>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">rating</span><span class="p">,</span><span class="w"> </span><span class="n">word</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="n">word</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">word_count</span><span class="w"> </span><span class="k">FROM</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="p">(</span><span class="w"> </span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="k">WITH</span><span class="w"> </span><span class="n">cleaned</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="k">SELECT</span><span class="w"> </span><span class="n">respondent_id</span><span class="p">,</span><span class="w"> </span><span class="n">regexp_replace</span><span class="p">(</span><span class="n">regexp_replace</span><span class="p">(</span><span class="n">regexp_replace</span><span class="p">(</span><span class="k">LOWER</span><span class="p">(</span><span class="k">comment</span><span class="p">),</span><span class="w"> </span><span class="s1">&#39;[^\w][\d]+&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="p">),</span><span class="w"> </span><span class="s1">&#39;[!\.,]+&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="p">)</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;\s*&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="k">comment</span><span class="p">,</span><span class="w"> </span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="n">rating</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">nps_survey_data</span><span class="p">)</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">respondent_id</span><span class="p">,</span><span class="w"> </span><span class="n">word</span><span class="p">,</span><span class="w"> </span><span class="n">rating</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">respondent_id</span><span class="p">,</span><span class="w"> </span><span class="n">regexp_split_to_table</span><span class="p">(</span><span class="k">comment</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;\s+&#39;</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">word</span><span class="p">,</span><span class="w"> </span><span class="n">rating</span><span class="w"> </span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="k">FROM</span><span class="w"> </span><span class="n">cleaned</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">x</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="k">WHERE</span><span class="w"> </span><span class="k">char_length</span><span class="p">(</span><span class="n">word</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="k">AND</span><span class="w"> </span><span class="n">word</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">              </span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">               </span><span class="s1">&#39;an&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">               </span><span class="s1">&#39;and&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">               </span><span class="s1">&#39;are&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="w">               </span><span class="s1">&#39;as&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="w">               </span><span class="s1">&#39;at&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="w">               </span><span class="s1">&#39;be&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="w">               </span><span class="s1">&#39;but&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="w">               </span><span class="s1">&#39;by&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="w">               </span><span class="s1">&#39;for&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="w">               </span><span class="s1">&#39;if&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="w">               </span><span class="s1">&#39;in&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="w">               </span><span class="s1">&#39;into&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="w">               </span><span class="s1">&#39;is&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a><span class="w">               </span><span class="s1">&#39;it&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a><span class="w">               </span><span class="s1">&#39;no&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a><span class="w">               </span><span class="s1">&#39;not&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a><span class="w">               </span><span class="s1">&#39;of&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a><span class="w">               </span><span class="s1">&#39;on&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a><span class="w">               </span><span class="s1">&#39;or&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a><span class="w">               </span><span class="s1">&#39;such&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-34" name="__codelineno-4-34" href="#__codelineno-4-34"></a><span class="w">               </span><span class="s1">&#39;that&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-35" name="__codelineno-4-35" href="#__codelineno-4-35"></a><span class="w">               </span><span class="s1">&#39;the&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-36" name="__codelineno-4-36" href="#__codelineno-4-36"></a><span class="w">               </span><span class="s1">&#39;their&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-37" name="__codelineno-4-37" href="#__codelineno-4-37"></a><span class="w">               </span><span class="s1">&#39;then&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-38" name="__codelineno-4-38" href="#__codelineno-4-38"></a><span class="w">               </span><span class="s1">&#39;there&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-39" name="__codelineno-4-39" href="#__codelineno-4-39"></a><span class="w">               </span><span class="s1">&#39;these&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-40" name="__codelineno-4-40" href="#__codelineno-4-40"></a><span class="w">               </span><span class="s1">&#39;they&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-41" name="__codelineno-4-41" href="#__codelineno-4-41"></a><span class="w">               </span><span class="s1">&#39;this&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-42" name="__codelineno-4-42" href="#__codelineno-4-42"></a><span class="w">               </span><span class="s1">&#39;to&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-43" name="__codelineno-4-43" href="#__codelineno-4-43"></a><span class="w">               </span><span class="s1">&#39;was&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-44" name="__codelineno-4-44" href="#__codelineno-4-44"></a><span class="w">               </span><span class="s1">&#39;will&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-45" name="__codelineno-4-45" href="#__codelineno-4-45"></a><span class="w">               </span><span class="s1">&#39;with&#39;</span><span class="p">)</span>
+<a id="__codelineno-4-46" name="__codelineno-4-46" href="#__codelineno-4-46"></a><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">x</span>
+<a id="__codelineno-4-47" name="__codelineno-4-47" href="#__codelineno-4-47"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">rating</span><span class="p">,</span><span class="w"> </span><span class="n">word</span>
+<a id="__codelineno-4-48" name="__codelineno-4-48" href="#__codelineno-4-48"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">word_count</span><span class="w"> </span><span class="k">DESC</span>
+</code></pre></div>
+<p>The purpose of this query is to <strong>retrieve the comments and see the words that respondents wrote more times</strong>.</p>
+<p>More specifically, this code will return a table with three columns: one with the <code>rating</code>, another with a <code>word</code>, and a final column with the <code>word_count</code> that contains <strong>the number of times each word was used to justify a rating</strong>.</p>
+<ol>
+<li>
+<p>To begin this query, this code retrieves the data from the <code>comment</code> column that belongs to the <code>nps_survey_data</code> table, which contains the texts of every respondent. But it uses a regular expression (i.e. <code>regexp_replace</code>) to make the text lowercase and remove unnecessary characters.</p>
+</li>
+<li>
+<p>After that, it uses <code>regexp_split_to_table</code> on the cleaned text so that every row in the <code>word</code> column contains only one word. This code also prevents unnecessary English stop words that Elasticsearch uses<sup id="fnref-7"><a href="#footnote-7">7</a></sup> from being included.</p>
+</li>
+<li>
+<p>Finally, the outer <code>SELECT</code> statement uses the information obtained from the previous steps to build the resulting table that shows the three columns that we want.</p>
+</li>
+</ol>
+<p>The data that I obtained from my writing app NPS survey feedback is displayed as follows:</p>
+<table>
+<thead>
+<tr>
+<th>rating</th>
+<th>word</th>
+<th>word_count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9</td>
+<td>writing</td>
+<td>3</td>
+</tr>
+<tr>
+<td>10</td>
+<td>excellent</td>
+<td>2</td>
+</tr>
+<tr>
+<td>8</td>
+<td>helpful</td>
+<td>2</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To obtain actionable data from this textual analysis, it is recommended to <strong>evaluate the most frequently used words associated with lower ratings</strong>.</p>
+</div>
+<hr />
+<h2 id="contribution"><img alt="✍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/270d.svg" title=":writing_hand:" /> Contribution</h2>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Find the Edit icon next to <a href="#metric-net-promoter-score-nps">the main title of the document</a> allowing direct edits on GitHub.</p>
+</div>
+<p>This project is built using Markdown. If you have suggestions, corrections or new content to add, you can follow these steps using GitHub and your command-line interface to contribute:</p>
+<ol>
+<li>Fork <a href="https://github.com/manutechwriter/npstest">this repository</a>.</li>
+<li>Create a branch: <code>git checkout -b my-feature</code>.</li>
+<li>Make your changes: Edit the existing files or add a new one if needed.</li>
+<li>Stage your changes: <code>git add &lt;file&gt;</code> (or just <code>git add .</code> to include all changes).</li>
+<li>Commit your changes: <code>git commit -m "text about the change"</code>.</li>
+<li>Push to your branch: <code>git push origin my-feature</code>.</li>
+</ol>
+<p>After that, we can review the changes and keep on making this documentation better.</p>
+<h2 id="feedback"><img alt="📬" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f4ec.svg" title=":mailbox_with_mail:" /> Feedback</h2>
+<p>Help us improve.</p>
+<p>Please, <a href="https://docs.google.com/forms/d/e/1FAIpQLSccMphRmXE1b3AhfzOw4ITvjGRhJnl_0vJNgFtc5gadnP9nJA/viewform?usp=sf_link">follow this link to Google Forms</a> to answer a few questions about this documentation, report an error or make any related suggestion.</p>
+<hr />
+<h2 id="footnotes-and-references">Footnotes and references</h2>
+<ol id="footnotes-list">
+  <li id="footnote-1">Trademark notice: Net Promoter®, NPS®, NPS Prism®, and the NPS-related emoticons are registered trademarks of Bain & Company, Inc., NICE Systems, Inc., and Fred Reichheld. Net Promoter ScoreSM and Net Promoter SystemSM are service marks of Bain & Company, Inc., NICE Systems, Inc., and Fred Reichheld. <a href="#fnref-1">↩</a></li>
+  <li id="footnote-2">Reichheld, F. F. (2015, July 16). The One Number You Need to Grow. Harvard Business Review. https://hbr.org/2003/12/the-one-number-you-need-to-grow <a href="#fnref-2">↩</a>
+  </li>
+  <li id="footnote-3">How to calculate Net Promoter Score (NPS) in 2023. (2023, July 20). Qualtrics. https://www.qualtrics.com/experience-management/customer/measure-nps/ <a href="#fnref-3">↩</a></li>
+  <li id="footnote-4">Davies, J. (2023, July 7). What is employee net promoter score (eNPS) and how can it be used to improve employee engagement? Qualtrics. https://www.qualtrics.com/blog/employee-net-promoter-score-enps-good-measure-engagement/ <a href="#fnref-4">↩</a></li>
+  <li id="footnote-5">Qualtrics XM - Experience Management Software. (2023, July 21). Qualtrics. https://www.qualtrics.com/ <a href="#fnref-5">↩</a></li>
+  <li id="footnote-6">Google Forms: sign-in. (n.d.). https://docs.google.com/forms/ <a href="#fnref-6">↩</a></li>
+  <li id="footnote-7">Stop token filter | Elasticsearch Guide [8.9] | Elastic. (n.d.). Elastic. https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-stop-tokenfilter.html <a href="#fnref-7">↩</a></li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy", "content.action.edit", "search.suggest", "navigation.tabs", "navigation.tracking", "navigation.instant", "navigation.top", "search.highlight"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+    
+  </body>
+</html>
