@@ -8,6 +8,7 @@ nav:
     - Live Chart (NEW): live-chart.md
 theme:
     name: material
+    custom_dir: overrides
     palette:
       - scheme: default
         primary: black
@@ -27,17 +28,23 @@ theme:
         - navigation.tracking
         - navigation.instant
         - navigation.top
+        - search.highlight
+    icon:
+      repo: fontawesome/brands/git-alt
 
 repo_url: https://github.com/manutechwriter/npstest
 edit_uri: edit/main/docs/
 
+plugins:
+- search
+- include-markdown
 
 markdown_extensions:
 - attr_list
 - md_in_html
 - pymdownx.emoji:
-    emoji_index: !!python/name:materialx.emoji.twemoji
-    emoji_generator: !!python/name:materialx.emoji.to_svg
+          emoji_index: !!python/name:material.extensions.emoji.twemoji
+          emoji_generator: !!python/name:material.extensions.emoji.to_svg
 - pymdownx.highlight:
       anchor_linenums: true
 - pymdownx.inlinehilite

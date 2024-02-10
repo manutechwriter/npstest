@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Updates (NEW)
 
 These are the features that I added since the last meeting:
@@ -11,6 +15,5 @@ These are the features that I added since the last meeting:
 7. **4 Feb 2024**: Upgraded mkdocs material locally and adding these lines just to push a change and check if the live version of mkdocs-material also upgrades 
 
 
-Manuel Arnedo
-
 [Go back to the NPS document](https://manutechwriter.github.io/npstest/){ .md-button }
+
