@@ -12,8 +12,10 @@ These are the features that I added since the last meeting:
 4. **Effortless Editing**: Find the new Edit icon next to the main title of a document allowing direct edits on GitHub. Commits automatically trigger deployment with GitHub Actions.
 5. **Back to Top**: Added a button to return to the beginning of the document. It appears below the top navigation bar at the center as soon as you scroll up.
 6. **Live Pie Chart**: Implemented a mermaid [NPS live chart](https://manutechwriter.github.io/npstest/live-chart/) that updates automatically with JavaScript. It gets the data from a PostgreSQL database with a NodeJS backend that I developed separately.
-7. **4 Feb 2024**: Upgraded mkdocs material locally and adding these lines just to push a change and check if the live version of mkdocs-material also upgrades 
+7. **Added Giscus comments**: Implemented the Giscus comment system.
 
+<!--intro-start-->
+Manuel
+<!--intro-end-->
 
 [Go back to the NPS document](https://manutechwriter.github.io/npstest/){ .md-button }
-
